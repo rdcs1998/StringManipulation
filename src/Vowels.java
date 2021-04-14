@@ -1,9 +1,14 @@
-
+import java.util.Scanner;
 public class Vowels {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("Put in your sentence\n");
+		String sentence = scan.nextLine();
+		
+		System.out.println("Vowels=" + VowelCount(sentence));
 	}
 	
 	public static int VowelCount(String sentence) {
