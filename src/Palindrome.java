@@ -23,13 +23,13 @@ public class Palindrome {
 	public static int Palindrome(String str) {
 		
 		int i, len = str.length();
-	    StringBuilder dest = new StringBuilder(len);
+	    StringBuilder strb = new StringBuilder(len);
 
 	    for (i = (len - 1); i >= 0; i--){
-	        dest.append(str.charAt(i));
+	        strb.append(str.charAt(i));
 	    }
 		
-		if (str.equals(dest.toString())){
+		if (str.equals(strb.toString())){
 			return 1;
 		}
 		return 0;
